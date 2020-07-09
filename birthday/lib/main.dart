@@ -454,7 +454,9 @@ class _PointLotteryState extends State<PointLottery> {
                             },
                           );
                           _choice();
-                          _incrementmaxScore();
+                          if(_maxscore<_score){
+                            _incrementmaxScore();
+                          }
                           _incrementwinlottery();
                         }
                         else {
@@ -523,7 +525,9 @@ class _PointLotteryState extends State<PointLottery> {
                               },
                           );
                           _choice();
-                          _incrementmaxScore();
+                          if(_maxscore<_score){
+                            _incrementmaxScore();
+                          }
                           _incrementwinlottery();
                         }
                         else {
